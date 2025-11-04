@@ -54,15 +54,16 @@ except subprocess.CalledProcessError as e:
     print("Alignment failed. Check your paths and model setup.")
     print("Error:", e)
 
-Alignment Quality Summary:
---------------------------
-File                               	Duration	Phone Dev	SNR  	Speech Log-Likelihood
-F2BJRLP1                           	25.31    	3.89      	8.11 	-45.95
-F2BJRLP2                           	28.65    	3.59      	7.89 	-45.83
-F2BJRLP3                           	30.71    	3.66      	10.33	-46.88
-ISLE_SESS0131_BLOCKD02_01_sprt1    	4.13     	2.72      	11.85	-52.37
-ISLE_SESS0131_BLOCKD02_02_sprt1    	3.88     	2.53      	12.36	-50.91
-ISLE_SESS0131_BLOCKD02_03_sprt1    	4.50     	3.88      	11.44	-53.55
+## 📊 Alignment Quality Summary
+
+| File                             | Duration (s) | Phone Deviation | SNR   | Speech Log-Likelihood |
+|----------------------------------|--------------|------------------|-------|------------------------|
+| F2BJRLP1                         | 25.31        | 3.89             | 8.11  | -45.95                 |
+| F2BJRLP2                         | 28.65        | 3.59             | 7.89  | -45.83                 |
+| F2BJRLP3                         | 30.71        | 3.66             | 10.33 | -46.88                 |
+| ISLE_SESS0131_BLOCKD02_01_sprt1 | 4.13         | 2.72             | 11.85 | -52.37                  |
+| ISLE_SESS0131_BLOCKD02_02_sprt1 | 3.88         | 2.53             | 12.36 | -50.91                  |
+| ISLE_SESS0131_BLOCKD02_03_sprt1 | 4.50         | 3.88             | 11.44 | -53.55                  |
 
 Inspecting TextGrid Files:
 Open each TextGrid file in Praat using:
