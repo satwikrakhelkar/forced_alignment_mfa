@@ -1,16 +1,16 @@
 import subprocess
 import os
 
-# Define paths
+
 corpus_dir = "wav"
 dictionary = "english_us_arpa"
 acoustic_model = "english_us_arpa"
 output_dir = "output"
 
-# Optional: Clean MFA cache before running
+
 clean_flag = "--clean"
 
-# Build the MFA command
+
 command = [
     "python", "-m", "montreal_forced_aligner",
     "align",
@@ -21,7 +21,7 @@ command = [
     output_dir
 ]
 
-# Run the alignment
+
 try:
     print("Running Montreal Forced Aligner...")
     subprocess.run(command, check=True)
